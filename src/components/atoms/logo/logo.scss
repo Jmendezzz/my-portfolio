@@ -1,0 +1,25 @@
+@import '@styles/mixins';
+@import '@styles/variables';
+.logo{
+    @include flex($direction:column, $align:start);
+    gap: 0.2rem;
+    width:85px;
+
+    &__name{
+        font-size: 1rem;
+        line-height: 0;
+    }
+
+    &__subtittle{
+        font-size: 1rem;
+        font-weight: 700;
+        color: $contrast-color;
+        display: flex;
+        width: 100%;
+        justify-content: end;
+
+
+    }
+
+
+}

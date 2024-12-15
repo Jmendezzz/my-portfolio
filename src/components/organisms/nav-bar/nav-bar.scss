@@ -1,0 +1,15 @@
+@import '@styles/mixins';
+
+.nav{
+    width: 100%;
+    @include flex($justify:space-between, $align:center);
+    &__list{
+        @include space-x(1rem);
+        font-weight: 600;
+        @include text-sm;
+
+        @include laptop(){
+            @include text-md;
+        }
+    }
+}
