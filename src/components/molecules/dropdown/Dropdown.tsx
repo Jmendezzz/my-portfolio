@@ -1,4 +1,4 @@
-import React, { useState, createContext, useContext, ReactNode, useRef } from 'react';
+import React, { useState, createContext, useContext, ReactNode, useRef, useMemo } from 'react';
 import { useClickOutside } from '@/hooks/useClickOutside';
 import './dropdown.scss';
 
@@ -19,20 +19,28 @@ interface DropdownComponent extends React.FC<DropdownProps> {
   Item: React.FC<DropdownItemProps>;
 }
 
+function useDropdownContext(){
+  const context = useContext(DropdownContext);
+  if (!context) {
+    throw new Error('DropdownItem must be used within a Dropdown');
+  }
+  return context;
+}
 const Dropdown: DropdownComponent = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
   const ref = useRef(null);
 
-    useClickOutside({
-        ref,
-        handler: () => setIsOpen(false),
-    });
+  useClickOutside({
+    ref,
+    handler: () => setIsOpen(false),
+  });
 
+  const contextValue = useMemo(() => ({ isOpen, toggle }), [isOpen, toggle]);
 
   return (
-    <DropdownContext.Provider value={{ isOpen, toggle }}>
+    <DropdownContext.Provider value={contextValue}>
       <div className="dropdown" ref={ref}>{children}</div>
     </DropdownContext.Provider>
   );
@@ -43,11 +51,7 @@ interface DropdownToggleProps {
 }
 
 const DropdownToggle: React.FC<DropdownToggleProps> = ({ children }) => {
-  const context = useContext(DropdownContext);
-
-  if (!context) {
-    throw new Error('DropdownToggle must be used within a Dropdown');
-  }
+  const context = useDropdownContext();
 
   return (
     <button className="dropdown__toggle" onClick={context.toggle}>
@@ -61,11 +65,7 @@ interface DropdownMenuProps {
 }
 
 const DropdownMenu: React.FC<DropdownMenuProps> = ({ children }) => {
-  const context = useContext(DropdownContext);
-
-  if (!context) {
-    throw new Error('DropdownMenu must be used within a Dropdown');
-  }
+  const context = useDropdownContext();
 
   return (
     <div
@@ -82,10 +82,19 @@ interface DropdownItemProps {
 }
 
 const DropdownItem: React.FC<DropdownItemProps> = ({ children, onClick }) => {
+  const context = useDropdownContext();
+
+  const handleClick = () => {
+    context.toggle();
+    if(onClick) {
+      onClick();
+    }
+  };
+
   return (
-    <div className="dropdown__item" onClick={onClick}>
+    <button className="dropdown__item" onClick={handleClick} role="menuitem" tabIndex={0} onKeyPress={(e) => { if (e.key === 'Enter' || e.key === ' ') handleClick(); }}>
       {children}
-    </div>
+    </button>
   );
 };
 

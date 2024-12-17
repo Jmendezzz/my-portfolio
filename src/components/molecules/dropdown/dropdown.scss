@@ -14,7 +14,7 @@
   &__menu {
     position: absolute;
     top: 100%;
-    left: -50%;
+    left: 0%;
     background-color: $primary-color-light;
     z-index: 1000;
     min-width: 100%;
@@ -32,11 +32,20 @@
   }
 
   &__item {
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.6rem;
     cursor: pointer;
+    color: $white-color;
+    border: none;
+    @include text-sm();
+    width: 100%;
+    background-color: transparent;
 
     &:hover {
-      background-color: $primary-color;
+      background-color: $primary-color-dark;
     }
+    @include laptop() {
+      padding: 0.5rem 0.8rem;
+    }
+
   }
 }

@@ -5,7 +5,12 @@
     @include padding-y(0.5rem);
     @include padding-x(0.5rem);
     @include border-radius-md();
-    font-weight: 600;
+    @include text-sm();
+
+    @include tablet(){
+        @include padding-y(0.5rem);
+        @include padding-x(1rem);
+    }
     color:$white-color;
     &:hover{
         background-color: $primary-color-light;
@@ -15,5 +20,4 @@
         gap:0.3rem
     }
     transition: all 0.3s;
-
 }
