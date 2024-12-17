@@ -1,0 +1,4 @@
+@import '@styles/mixins';
+.header {
+  @include flex($justify: center, $align: center, $direction: column);
+}
