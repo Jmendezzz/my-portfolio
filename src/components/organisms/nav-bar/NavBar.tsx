@@ -8,11 +8,13 @@ function NavBar() {
   return (
     <nav className="nav">
       <Logo />
-      <ul className="nav__list">
-        <Link to="#">{t('nav.contact')}</Link>
-        <Link to="#">{t('nav.projects')}</Link>
+      <div className='nav__right'>
+        <ul className="nav__list">
+          <Link to="#">{t('nav.projects')}</Link>
+          <Link to="#">{t('nav.contact')}</Link>
+        </ul>
         <LanguageSwitcher />
-      </ul>
+      </div>
     </nav>
   );
 }

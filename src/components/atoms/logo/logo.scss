@@ -4,14 +4,35 @@
     @include flex($direction:column, $align:start);
     gap: 0.2rem;
     width:85px;
+    @include laptop{
+        width: 100px;
+    }
+    @include desktop{
+        width: 160px;
+    }
 
     &__name{
         font-size: 1rem;
         line-height: 0;
+
+        @include laptop{
+            font-size: 1.5rem;
+            line-height:0.4;
+        }
+        @include desktop{
+            font-size: 2rem;
+            line-height:0.5;
+        }
     }
 
     &__subtittle{
         font-size: 1rem;
+        @include laptop{
+            font-size: 1.5rem;
+        }
+        @include desktop{
+            font-size: 2rem;
+        }
         font-weight: 700;
         color: $contrast-color;
         display: flex;

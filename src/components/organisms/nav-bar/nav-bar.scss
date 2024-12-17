@@ -5,11 +5,15 @@
     @include flex($justify:space-between, $align:center);
     &__list{
         @include space-x(1rem);
-        font-weight: 600;
+        font-weight: 400;
         @include text-sm;
 
         @include laptop(){
-            @include text-md;
+            @include text-sm;
         }
+    }
+    &__right{
+        @include flex($justify:center, $align:center);
+        gap:1rem
     }
 }
