@@ -1,12 +1,14 @@
 import Section from './components/atoms/section/Section';
 import { NavBar } from './components/organisms';
 import '@/utils/i18n'; 
+import HeroSection from './features/hero/hero-section/HeroSection';
 
 function App() {
   return (
-    <Section>
+    <main>
       <NavBar/>
-    </Section>
+      <HeroSection/>
+    </main>
   );
 }
 

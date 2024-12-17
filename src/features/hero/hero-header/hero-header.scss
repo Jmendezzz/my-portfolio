@@ -1,0 +1,12 @@
+@import '@styles/variables';
+@import '@styles/mixins';
+.hero-header{
+    @include flex($justify:center, $align:center, $direction:column);
+    text-align: center;
+
+    &__name{
+
+        color: $contrast-color;
+
+    }
+}
