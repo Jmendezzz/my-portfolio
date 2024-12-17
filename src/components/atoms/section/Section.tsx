@@ -2,11 +2,12 @@ import './section.scss';
 
 interface SectionProps {
   readonly children: React.ReactNode | React.ReactNode[];
+  readonly className?: string;
 }
 
-function Section({ children }: SectionProps) {
+function Section({ children, className }: SectionProps) {
   return (
-    <section className="section">
+    <section className={`section ${className}`}>
       <div className="section__content">{children}</div>                                                                                        
     </section>
   );

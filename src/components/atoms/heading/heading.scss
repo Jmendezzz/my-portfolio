@@ -1,0 +1,19 @@
+@import '@styles/mixins';
+
+.heading {
+  &--sm {
+    @include text-sm;
+  }
+
+  &--md {
+    @include text-md;
+  }
+
+  &--lg {
+    @include text-lg;
+  }
+
+  &--xl {
+    @include text-xl;
+  }
+}

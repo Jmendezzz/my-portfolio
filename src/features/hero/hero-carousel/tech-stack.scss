@@ -1,0 +1,22 @@
+@import '@styles/variables';
+@import '@styles/mixins';
+
+.tech-stack-carousel {
+    &__item{
+    @include flex($justify: center, $align: center, $direction: column);
+    margin: 1rem 2rem;
+    }
+
+  &__image {
+    width: 60px;
+    margin-bottom: 1rem;
+    @include border-radius-md();
+  }
+
+  &__name {
+    font-size: 1rem;
+    color: $white-color;
+    text-align: center;
+    @include text-truncate;
+  }
+}

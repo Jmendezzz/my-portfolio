@@ -3,6 +3,16 @@
 .nav{
     width: 100%;
     @include flex($justify:space-between, $align:center);
+    @include padding-y(1rem);
+    @include padding-x(1rem);
+    @include container();
+
+    @include tablet(){
+        @include padding-y(1.5rem);
+    }
+    @include laptop(){
+        @include padding-y(2rem);
+    }
     &__list{
         @include space-x(1rem);
         font-weight: 400;

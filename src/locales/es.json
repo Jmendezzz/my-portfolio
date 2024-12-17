@@ -2,5 +2,10 @@
     "nav": {
       "contact": "Contacto",
       "projects": "Proyectos"
+    },
+    "hero":{
+      "title": "Hola, soy",
+      "name": "Juan Gerardo",
+      "subtitle": "Soy un desarrollador web fullstack"
     }
   }
