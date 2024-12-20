@@ -6,6 +6,14 @@
     "hero":{
       "title": "Hola, soy",
       "name": "Juan Gerardo",
-      "subtitle": "Soy un desarrollador web fullstack"
+      "subtitle": "Desarrollador web fullstack",
+      "description": "Estudiante de ingeniería de software de Colombia, especializado en desarrollo web. Me encanta aprender cosas nuevas y compartir mi conocimiento con los demás.",
+      "contact": "Contáctame",
+      "linkedin": "LinkedIn"
+    },
+    "projects": {
+      "title": "Proyectos",
+      "subtitle": "Algunos de mis trabajos",
+      "view": "Ver en GitHub"
     }
   }

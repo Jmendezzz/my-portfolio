@@ -22,5 +22,7 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "src/features/hero/hero-carousel/TechStackCarousel.tsx"]
+  "include": ["src", "src/features/hero/hero-carousel/TechStackCarousel.tsx"],
+  "extends": "./tsconfig.json",
+
 }

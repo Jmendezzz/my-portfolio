@@ -2,15 +2,20 @@
 @import '@styles/mixins';
 
 .tech-stack-carousel {
+  @include padding-y(1rem);
     &__item{
     @include flex($justify: center, $align: center, $direction: column);
     margin: 1rem 2rem;
     }
 
   &__image {
-    width: 60px;
-    margin-bottom: 1rem;
+    width: 30px;
     @include border-radius-md();
+
+    @include laptop {
+      width: 50px;
+      margin-bottom: 0.4em;
+    }
   }
 
   &__name {

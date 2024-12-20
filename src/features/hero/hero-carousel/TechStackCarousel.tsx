@@ -43,21 +43,19 @@ const techStack = [
     image:'visual-studio.svg',
     name: 'Visual Studio',
   }
-
-
 ];
 
 function TechStackCarousel() {
   return (
     <Marquee
-    pauseOnHover
     speed={70}
     autoFill
     direction='right'
+    className='tech-stack-carousel'
     
     >
       {techStack.map((tech, index) => (
-        <div key={index} className="tech-stack-carousel__item">
+        <div key={`${index}-${tech.name}`} className="tech-stack-carousel__item">
           <img
             src={tech.image}
             alt={tech.name}

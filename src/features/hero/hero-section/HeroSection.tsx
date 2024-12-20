@@ -1,8 +1,8 @@
 import Section from '@components/atoms/section/Section';
 import HeroHeader from '@/features/hero/hero-header/HeroHeader';
 import HeroBody from '../hero-body/HeroBody';
-import './hero-section.scss';
 import TechStackCarousel from '../hero-carousel/TechStackCarousel';
+import './hero-section.scss';
 
 function HeroSection() {
   return (
@@ -10,8 +10,8 @@ function HeroSection() {
       <div className='hero-section'>
         <HeroHeader />
         <HeroBody />
-        <TechStackCarousel />
       </div>
+      <TechStackCarousel />
     </Section>
   );
 }

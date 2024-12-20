@@ -1,12 +1,17 @@
 @import '@styles/variables';
 @import '@styles/mixins';
 .hero-header{
-    @include flex($justify:center, $align:center, $direction:column);
-    text-align: center;
+    text-align:center;
 
+    @include tablet(){
+        text-align: left;
+        @include flex($direction: column,  $align: start);
+    }
     &__name{
-
         color: $contrast-color;
-
+    }
+    &__description{
+        @include text-md();
+        margin-block: 0.4rem;
     }
 }
