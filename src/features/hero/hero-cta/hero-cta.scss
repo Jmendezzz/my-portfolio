@@ -1,0 +1,6 @@
+@import '@styles/mixins';
+.hero-cta{
+    @include space-x(1rem);
+    @include padding-y(1rem);
+
+}
