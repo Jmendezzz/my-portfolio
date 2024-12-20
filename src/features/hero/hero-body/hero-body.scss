@@ -8,12 +8,9 @@
     @include border-radius-md();
     box-shadow: 0 1px 30px rgba($contrast-color, 1);
 
-    @include tablet() {
-      max-width: 600px;
-    }
 
     @include laptop() {
-      max-width: 700px;
+      max-width: 600px;
     }
   }
 }
