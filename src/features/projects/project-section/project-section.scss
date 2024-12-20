@@ -1,0 +1,10 @@
+@import '@styles/variables';
+.project-section {
+  background: linear-gradient(to bottom, $primary-color-darker, transparent);
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

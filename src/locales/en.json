@@ -7,10 +7,13 @@
     "title": "Hello, I'm",
     "name": "Juan Gerardo",
     "subtitle": "I'm a fullstack web developer",
-    "description": "Software engineering student from Colombia, passionate about web development and technology. I love to learn new things and share my knowledge with others."
+    "description": "Software engineering student from Colombia, passionate about web development and technology. I love to learn new things and share my knowledge with others.",
+    "contact": "Contact me",
+    "linkedin": "LinkedIn"
   },
   "projects": {
     "title": "Projects",
-    "subtitle": "Some of my works"
+    "subtitle": "Some of my works",
+    "view": "View on GitHub"
   }
 }

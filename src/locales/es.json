@@ -7,10 +7,13 @@
       "title": "Hola, soy",
       "name": "Juan Gerardo",
       "subtitle": "Desarrollador web fullstack",
-      "description": "Estudiante de ingeniería de software de Colombia, especializado en desarrollo web. Me encanta aprender cosas nuevas y compartir mi conocimiento con los demás."
+      "description": "Estudiante de ingeniería de software de Colombia, especializado en desarrollo web. Me encanta aprender cosas nuevas y compartir mi conocimiento con los demás.",
+      "contact": "Contáctame",
+      "linkedin": "LinkedIn"
     },
     "projects": {
       "title": "Proyectos",
-      "subtitle": "Algunos de mis trabajos"
+      "subtitle": "Algunos de mis trabajos",
+      "view": "Ver en GitHub"
     }
   }
