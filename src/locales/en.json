@@ -19,5 +19,10 @@
   "workExperience": {
     "title": "Work Experience",
     "subtitle": "Some of the companies I've worked with"
+  },
+  "footer": {
+    "name": "Juan Gerardo Mendez Lopez",
+    "position": "Fullstack Web Developer",
+    "rights": "All rights reserved"
   }
 }
