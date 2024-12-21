@@ -1,0 +1,71 @@
+@import '@styles/variables';
+@import '@styles/mixins';
+.timeline-item {
+  position: relative;
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+  width: 100%;
+  &:before {
+    content: '';
+    position: absolute;
+    left: -1rem;
+    top: 1rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: $contrast-color;
+    border-radius: 50%;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: -0.5rem;
+    top: 1rem;
+    width: 2px;
+    height: 100%;
+    background-color: darken($color: $contrast-color, $amount: 20);
+    z-index: -1;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+
+    @include laptop(){
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__content {
+    @include flex-col(flex-start, flex-start);
+    gap: 0.2rem;
+  }
+  
+
+  &__title {
+    @include text-lg();
+    color: $contrast-color;
+  }
+
+  &__date{
+    @include text-sm();
+    font-weight: 600;
+}
+
+  &__company,
+  &__location,
+  &__description {
+    @include text-md();
+    color: $white-color;
+  }
+
+  &__company, &__location {
+    font-weight: bold;
+  }
+
+
+}

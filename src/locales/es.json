@@ -15,5 +15,9 @@
       "title": "Proyectos",
       "subtitle": "Algunos de mis trabajos",
       "view": "Ver en GitHub"
+    },
+    "workExperience": {
+      "title": "Experiencia Laboral",
+      "subtitle": "Algunas de las empresas con las que he trabajado"
     }
   }

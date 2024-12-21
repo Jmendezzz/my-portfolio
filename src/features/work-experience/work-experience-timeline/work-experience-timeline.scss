@@ -1,0 +1,7 @@
+@import '@styles/variables';
+@import '@styles/mixins';
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+    @include flex-col(center, flex-start);
+}
