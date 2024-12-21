@@ -1,4 +1,4 @@
-import { NavBar } from './components/organisms';
+import { Footer, NavBar } from './components/organisms';
 import '@/utils/i18n'; 
 import HeroSection from './features/hero/hero-section/HeroSection';
 import ProjectSection from './features/projects/project-section/ProjectSection';
@@ -11,6 +11,7 @@ function App() {
       <HeroSection/>
       <ProjectSection/>
       <WorkExperienceSection/>
+      <Footer/>
     </main>
   );
 }

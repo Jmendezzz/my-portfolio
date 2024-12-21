@@ -19,5 +19,11 @@
     "workExperience": {
       "title": "Experiencia Laboral",
       "subtitle": "Algunas de las empresas con las que he trabajado"
+    },
+    "footer": {
+      "name": "Juan Gerardo Mendez Lopez",
+      "position": "Desarrollador Web Fullstack",
+      "rights": "Todos los derechos reservados"
+      
     }
   }

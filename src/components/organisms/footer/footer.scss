@@ -1,0 +1,84 @@
+@import '@styles/variables';
+@import '@styles/mixins';
+
+.footer {
+  background-color: $primary-color-dark;
+  color: $white-color;
+  padding: 3rem 1rem;
+
+  &__container {
+    @include container();
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+
+    @include tablet() {
+      @include flex(row, center, space-between);
+    }
+  }
+
+  &__info {
+    @include space-y(0.2rem);
+    text-align: left;
+  }
+
+  &__text {
+    @include text-md();
+  }
+
+  &__text-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__icon {
+    font-size: 1.5rem;
+  }
+
+  &__link {
+    @include text-md();
+    text-decoration: none;
+    color: $white-color;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $contrast-color;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+
+    @include tablet() {
+      justify-content: end;
+    }
+  }
+
+  &__social-link {
+    color: $white-color;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $contrast-color;
+    }
+  }
+
+  &__social-icon {
+    font-size: 1.5rem;
+  }
+
+  &__bottom {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  &__copyright {
+    margin: 0;
+  }
+}
