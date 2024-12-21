@@ -12,7 +12,6 @@ export function useClickOutside({ ref, handler }: UseClickOutsideProps) {
             if (!el || el.contains((event?.target as Node) || null)) {
                 return;
             }
-            console.log('click outside');
             handler(event);
         };
         document.addEventListener('mousedown', listener);
