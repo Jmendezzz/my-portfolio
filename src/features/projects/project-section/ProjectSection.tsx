@@ -5,7 +5,7 @@ import './project-section.scss'
 
 function ProjectSection() {
   return (
-    <Section className="project-section">
+    <Section className="project-section" id="projects">
         <ProjectHeader />
         <ProjectList />
     </Section>

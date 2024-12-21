@@ -34,7 +34,7 @@ function Footer() {
         </div>
         <div className="footer__social">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/JMendezzz"
             className="footer__social-link"
             target="_blank"
             rel="noopener noreferrer"
@@ -42,7 +42,7 @@ function Footer() {
             <BsGithub className="footer__social-icon" />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/juan-gerardo-m-l"
             className="footer__social-link"
             target="_blank"
             rel="noopener noreferrer"

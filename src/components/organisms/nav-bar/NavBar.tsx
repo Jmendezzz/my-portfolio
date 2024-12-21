@@ -10,7 +10,7 @@ function NavBar() {
       <Logo />
       <div className='nav__right'>
         <ul className="nav__list">
-          <Link to="#">{t('nav.projects')}</Link>
+          <Link to="#projects">{t('nav.projects')}</Link>
           <Link to="#">{t('nav.contact')}</Link>
         </ul>
         <LanguageSwitcher />
