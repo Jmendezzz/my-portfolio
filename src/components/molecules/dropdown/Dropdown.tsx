@@ -30,7 +30,7 @@ const Dropdown: DropdownComponent = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null!);
 
   useClickOutside({
     ref,
