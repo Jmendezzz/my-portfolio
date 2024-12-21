@@ -15,5 +15,9 @@
     "title": "Projects",
     "subtitle": "Some of my works",
     "view": "View on GitHub"
+  },
+  "workExperience": {
+    "title": "Work Experience",
+    "subtitle": "Some of the companies I've worked with"
   }
 }
