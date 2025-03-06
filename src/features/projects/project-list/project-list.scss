@@ -1,5 +1,5 @@
 @import '@styles/mixins';
 .project-list{
-    @include space-y(2rem);
+    @include space-y(4rem);
     list-style: none;
 }
