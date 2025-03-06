@@ -9,7 +9,7 @@ function HeroCta() {
   return (
     <div className="hero-cta">
       <Button variant="secondary" size="md" icon={<BsMailbox />}>
-        <a href="#a"> {t('hero.contact')}</a>
+        <a href="mailto:juange.mendez.lopez@gmail.com"> {t('hero.contact')}</a>
       </Button>
       <Button variant="secondary" size="md" icon={<FaLinkedin />}>
         <a href="https://www.linkedin.com/in/juan-gerardo-m-l/" target='_blank'> {t('hero.linkedin')}</a>

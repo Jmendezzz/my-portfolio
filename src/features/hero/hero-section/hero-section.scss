@@ -5,11 +5,15 @@
   @include flex($direction: column);
   gap: 1rem;
   width: 100%;
+  
   @include laptop() {
-    @include flex($direction: row,$align:start);
+    @include flex($direction: row,$align:center);
   }
 
   &__section {
+    @include flex($direction: column,$align:center);
     background: linear-gradient(to top, $primary-color-darker, transparent); 
+    height: 100vh;
+
   }
 }

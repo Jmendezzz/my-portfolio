@@ -1,9 +1,10 @@
 import Marquee from 'react-fast-marquee';
 import './tech-stack.scss';
+import AnimatedComponent from '@components/atoms/animated/AnimatedComponent';
 
 const techStack = [
   {
-    image:'java.svg',
+    image: 'java.svg',
     name: 'Java',
   },
   {
@@ -15,7 +16,7 @@ const techStack = [
     name: 'MySQL',
   },
   {
-    image:'docker.svg',
+    image: 'docker.svg',
     name: 'Docker',
   },
   {
@@ -24,7 +25,7 @@ const techStack = [
   }
   ,
   {
-    image:'typescript.svg',
+    image: 'typescript.svg',
     name: 'TypeScript',
   },
   {
@@ -36,35 +37,38 @@ const techStack = [
     name: 'Angular',
   },
   {
-    image:'css.svg',
+    image: 'css.svg',
     name: 'CSS',
-  },  
+  },
   {
-    image:'visual-studio.svg',
+    image: 'visual-studio.svg',
     name: 'Visual Studio',
   }
 ];
 
 function TechStackCarousel() {
   return (
-    <Marquee
-    speed={70}
-    autoFill
-    direction='right'
-    className='tech-stack-carousel'
-    
-    >
-      {techStack.map((tech, index) => (
-        <div key={`${index}-${tech.name}`} className="tech-stack-carousel__item">
-          <img
-            src={tech.image}
-            alt={tech.name}
-            className="tech-stack-carousel__image"
-          />
-          <p className="tech-stack-carousel__name">{tech.name}</p>
-        </div>
-      ))}
-    </Marquee>
+    <AnimatedComponent delay={0.9}>
+      <Marquee
+        speed={70}
+        autoFill
+        direction='right'
+        className='tech-stack-carousel'
+
+      >
+        {techStack.map((tech, index) => (
+          <div key={`${index}-${tech.name}`} className="tech-stack-carousel__item">
+            <img
+              src={tech.image}
+              alt={tech.name}
+              className="tech-stack-carousel__image"
+            />
+            <p className="tech-stack-carousel__name">{tech.name}</p>
+          </div>
+        ))}
+      </Marquee>
+    </AnimatedComponent>
+
   );
 }
 
