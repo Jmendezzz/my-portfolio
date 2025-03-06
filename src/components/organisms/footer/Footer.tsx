@@ -14,7 +14,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__info">
-          <Logo />
+          <Logo size='medium' />
           <p className="footer__text  footer__text-icon">
             <PiUserFill />
             {t('footer.name')}
