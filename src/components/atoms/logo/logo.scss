@@ -4,14 +4,26 @@
     @include flex($direction:column, $align:start);
     gap: 0.2rem;
     width:85px;
+    transition: all 0.3s;
     @include laptop{
         width: 100px;
     }
     @include desktop{
         width: 160px;
     }
+    
+    &--small{
+        width: 60px;
+        @include laptop{
+            width: 80px;
+        }
+        @include desktop{
+            width: 120px;
+        }
+    }
 
     &__name{
+        transition: all 0.3s;
         font-size: 1rem;
         line-height: 0;
 
@@ -22,6 +34,17 @@
         @include desktop{
             font-size: 2rem;
             line-height:0.5;
+        }
+
+        
+        &--small{
+            font-size: 0.8rem;
+            @include laptop{
+                font-size: 1rem;
+            }
+            @include desktop{
+                font-size: 1.5rem;
+            }
         }
     }
 
@@ -39,8 +62,19 @@
         width: 100%;
         justify-content: end;
 
+        &--small{
+            font-size: 0.8rem;
+            @include laptop{
+                font-size: 0.9rem;
+            }
+            @include desktop{
+                font-size: 1rem;
+            }
+        }
+
 
     }
 
-
 }
+
+

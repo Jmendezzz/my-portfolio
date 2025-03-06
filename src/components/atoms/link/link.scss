@@ -1,10 +1,21 @@
 @import '@styles/variables';
+@import '@styles/mixins';
 .link{
     color: $white-color;
     text-decoration: none;
     cursor: pointer;
+    transition: all 0.3s;
     &:hover{
         color: $contrast-color;
     }
-    transition: all 0.3s;
+
+    &--small{
+        font-size: 0.8rem;
+        @include laptop(){
+            font-size: 1rem;
+        }
+        @include desktop(){
+            font-size: 1rem;
+        }
+    }
 }
