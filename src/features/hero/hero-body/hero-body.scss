@@ -9,7 +9,7 @@
     box-shadow: 0 1px 30px rgba($contrast-color, 1);
 
 
-    @include laptop() {
+    @include tablet() {
       max-width: 600px;
     }
   }
