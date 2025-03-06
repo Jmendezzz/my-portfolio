@@ -2,6 +2,21 @@ import { WorkExperience } from "@/domain/models/WorkExperience";
 
 export const workExperiences: WorkExperience[] = [
     {
+        id: 3,
+        title: {
+            en: 'Fullstack Developer',
+            es: 'Desarrollador Fullstack'
+        },
+        descrption: {
+            en: 'Developed and improved a web application for the education sector. Implemented RESTful APIs, integrated with third-party services, and developed frontend components using Angular and backend funcionalities using Express.',
+            es: 'Desarrollé y mejoré una aplicación web para el sector educativo. Implementé APIs RESTful, integré con servicios de terceros y desarrollé componentes frontend utilizando Angular y funcionalidades backend utilizando Express.'
+        },
+        company: 'U360',
+        location: 'Armenia, Quindío',
+        startDate: '01/2025',
+        endDate: 'Present'
+    },
+    {
         id: 1,
         title: {
             en: 'Backend Developer',
